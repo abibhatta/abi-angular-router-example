@@ -16,6 +16,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     {path: 'crisis-list', component: CrisisListComponent},
     {path: 'heroes-list', component: HeroesListComponent},
     {path: '', redirectTo: '/heroes-list', pathMatch: 'full'},
+    {path: '**', component: PageNotFoundComponent}
   ]),
   FormsModule ],
   declarations: [ AppComponent, HelloComponent, CrisisListComponent, HeroesListComponent, PageNotFoundComponent ],
